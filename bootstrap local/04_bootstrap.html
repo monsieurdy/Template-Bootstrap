@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Bootstrap 5</title>
+    <!--CSS Bootstrap en local-->
+    <link rel="stylesheet" href="/Bootstrap local/local/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Bootstrap local/local/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  
+<!--Font Awesome est une police d'icônes-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+referrerpolicy="no-referrer" />
+<!--Une police de Font-Awesome-->
+<link href="https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--Contenu HTML-->
+    <div class="container"></div>
+       <div class="navbar navbar-expand-lg navbar-dark bg-primary">
+           <a class="navbar-brand" href="#">Poissy</a>
+
+           <!--Partie pour la navigation sur mobile avec un bouton : le burger-->
+           <button class="navbar-toggler" type="button" data-toggle="collapse"
+           data-target="navbarSupportedContent">
+               <span class="navbar-toggler-icon"></span>
+            </button>  
+            <!--Fin Burger-->   
+
+            <div class="*collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                 <li class="nav-item"></class>
+                       <a href="#" class="nav-link">Accueil</a>
+                 </li>>
+                 <li class="nav-item">
+                     <a href="#" class="nav-link">A propos</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown_toggle" href="#" id="navbarDropdown">
+                     data-toggle="dropdown">Boutique</a> 
+                     <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Thés</a> 
+                        <a href="#" class="dropdown-item">Cafés</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#"class="dropdown-item">Matériel</a> 
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                    <!--Fin nav--> 
+
+                    <div class="jumbotron">
+                        <h1 class="display-4">Simple. Elegant. Awesome</h1>
+                    <p class="lead">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                        .Qui ipsam quia dolorem necessitatibus? Facilis nobis tempora 
+                        blanditiis debitis alias quae?
+                    </p>
+                    <p class="lead">
+                        <a href="#"class="btn btn-primary btn-lg"role="button">Voir plus</a>  
+                    </p>                  
+                    </div>
+                    <!--Fin Jumbotron-->
+
+                    <!--section de 3 colonnes-->
+                    <!--Les colonnes avec la classe col sont automatiquement de la même largeur-->
+                    <!--Si on voulait par avoir une colonnne plus grande que les autres il faut ajouter un chiffre .col-6 par exemple-->
+                        <div class="col">
+                        <!--En effet avec la classe .col cettee zone n'est pas responsive donc ensuite on rajoute la classe .col-sm-12 à chaque 
+                            carte pour indiquer que sur un petit écran la carte occupera toute la largeur de la grille qui fiat 12 colonnes dans
+                             BS la classe .col-md-4 indique que sur l'écran de taille moyenne est plus grand chaque carte occupe 1/3 de l'espace-->
+                            
+                             <div class="card">
+                                 <!--Cette carte une fois que la modification précédente est effectuée elle occupe 100% de la largeur de la grille
+                                nous allons donc rajouter une marge avec les classe BS sur la carte en modifiant la ligne 95 (.col)-->
+                            <!--avec BS on peut ajouter des marges (extérieur avec m et des paddings ( intérieurs) avec p après le m ou le p on peut
+                            ajouter soit 
+                            - t (top - haut)
+                            - b (bottom - bas)
+                            - l (left - gauche)
+                            - r (rigt - droite)
+                            - x ( droite & gauche) 
+                            - y ( haut & bas)
+                            ou rien pour les 4 côtés identiques
+                        Après un tiret (-) on indique une taille de 0 à 5 (5 étant la plus large)
+                    
+                        Ici on va ajouterune marge en bas de 4 pour avoir un espace entre la 1ère carte et les 2 suivantes-->
+                               
+                        <!--div class="card-body mb-4 text-center"> -->
+                        <div class="card-body text-center"> -->
+                                   <h5 class="card-title">Titre de la carte</h5>
+                                   <p class="card-text">Petite phrase d'accroche pour la Carte</p>
+                                   <a href="#" class="card-link">Un autre lien</a>
+                               </div>
+                          </div>
+                       </div>
+                  </div>
+                    <div class="row">
+                        <div class="card" style="border: 4px solid black;">
+                          <div class="car-body text-center">
+                            <h5 class="card-title">Titre de la carte</h5>
+                            <p class="card-text">Petite phrase d'accroche pour la Carte</p>
+                            <a href="#" class="card-link">Un autre lien</a>
+                         </div>                   
+                    </div>
+                </div>
+
+            </div>
+<!--Fin de 3 colonnes-->
+
+<!--section de 2 blocs dontune navigation secondaire latérale à droite-->
+       
+                <div class="row mt-sm-4 mt-md-4">
+                    <!--la classe mt c'est pour margin top et un chiffre de 0 à 5-->
+
+                    <div class="col-sm-12 col-md-4">
+                        <!--si on souhaite que sur mobile le texte de toute cette div soit centré on rajouterait 2 classes:.text-sm-center et text-md-left-->
+                        <!-- <div class="col-sm-12 col-8 text-sm-center text-md-left"-->
+                        <h3>Un titre important</h3>
+                        <p class="lead">On peut ajouter un sous"titre, qui est plus large mais en gris en utilisant la classe .lead de bootstrap
+                           
+                    </p>
+                       
+                    <p>
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et sint iure vel laudantium accusantium,
+                            tempora maxime dolores sit ad expedita quasi molestiae. Maiores asperiores blanditiis iste nemo expedita aliquid sed! 
+                    </p>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+                <h3 class="mb-4">Menu Secondaire</h3>
+
+                <ul class="nav flex-column nav-pills">
+                    <li class="nav-item" >
+                        <a href="#" class="nav-link-active">Activé</a>
+                    </li>
+                    <!--li.nav-item*4>a*.nav_link{lien}-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">lien</a>
+
+
+                    </li>                          
+           </div>
+           <div 
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      </body>
+    </html>
+       
+    
+</body>
+</html>
